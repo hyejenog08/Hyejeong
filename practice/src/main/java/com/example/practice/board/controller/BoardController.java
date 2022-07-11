@@ -12,4 +12,12 @@ public class BoardController {
 
     @Autowired
     private BoardService boardService;
+
+    @RequestMapping("mainPage")
+    public String mainPage(){
+
+        System.out.println("mainPage 싫행중입니다.");
+
+        return "board/mainPage";
+    }
 }
